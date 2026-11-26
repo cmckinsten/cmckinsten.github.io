@@ -1,0 +1,970 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中年女人的成熟_成熟女性的生活方式_中年女性自我成长与穿搭护肤指南</title>
+<meta name="description" content="中年女人的成熟，是一个关于中年女性生活方式与自我成长的内容站点，涵盖穿搭、护肤、情绪管理、婚姻沟通、职场转型与健康管理，适合35至55岁希望活得更笃定的女性阅读参考。">
+<meta name="keywords" content="成熟女性的生活方式,中年女性自我成长,中年女性穿搭,情绪管理,婚姻沟通">
+<style>
+:root{
+  --ink:#241f1c;
+  --ink-soft:#4a423d;
+  --ink-mute:#7a6f68;
+  --line:#e3dcd5;
+  --line-soft:#efe9e3;
+  --bg:#faf7f3;
+  --panel:#ffffff;
+  --panel-warm:#f5efe8;
+  --brand:#8c4a3f;
+  --brand-deep:#5f2f27;
+  --brand-soft:#f0e2dd;
+  --gold:#a8823f;
+  --gold-soft:#f4ecd9;
+  --green:#4d6b56;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 2px 10px rgba(60,40,30,.06);
+  --shadow-lg:0 10px 30px rgba(60,40,30,.10);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+  --serif:"Songti SC","Noto Serif SC",Georgia,serif;
+  --header-h:64px;
+  --bar-h:38px;
+  --wrap:1300px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);
+  line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700;}
+p{margin:0 0 12px;}
+ul,ol{margin:0;padding:0;list-style:none;}
+button{font-family:inherit;cursor:pointer;}
+:focus-visible{outline:2px solid var(--brand);outline-offset:2px;border-radius:4px;}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px;}
+section[id],div[id]{scroll-margin-top:calc(var(--header-h) + var(--bar-h) + 14px);}
+
+/* 公告条 */
+.announce{
+  position:sticky;top:0;z-index:60;height:var(--bar-h);
+  background:linear-gradient(90deg,var(--brand-deep),var(--brand));
+  color:#f7ece7;display:flex;align-items:center;font-size:13px;
+}
+.announce .wrap{display:flex;align-items:center;gap:14px;width:100%;overflow:hidden;}
+.announce .tag{background:rgba(255,255,255,.16);padding:1px 8px;border-radius:20px;font-size:12px;letter-spacing:.5px;flex:none;}
+.announce .txt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.announce .txt b{color:#ffdcc9;font-weight:600;}
+
+/* 页头 */
+.site-header{
+  position:sticky;top:var(--bar-h);z-index:55;height:var(--header-h);
+  background:rgba(250,247,243,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);display:flex;align-items:center;
+}
+.site-header .wrap{display:flex;align-items:center;gap:28px;width:100%;}
+.brand{display:flex;align-items:center;gap:10px;flex:none;}
+.brand svg{width:34px;height:34px;flex:none;}
+.brand-text{font-size:18px;font-weight:700;letter-spacing:1px;color:var(--brand-deep);white-space:nowrap;}
+.main-nav{display:flex;gap:22px;font-size:14.5px;color:var(--ink-soft);flex-wrap:wrap;}
+.main-nav a{position:relative;padding:4px 0;white-space:nowrap;}
+.main-nav a:hover{color:var(--brand);}
+.main-nav a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--brand);transform:scaleX(0);transition:.2s;}
+.main-nav a:hover::after{transform:scaleX(1);}
+.header-tools{margin-left:auto;display:flex;align-items:center;gap:10px;}
+.search-box{display:flex;align-items:center;border:1px solid var(--line);background:#fff;border-radius:22px;padding:4px 6px 4px 14px;}
+.search-box input{border:0;outline:0;background:transparent;font-size:13.5px;width:150px;color:var(--ink);font-family:inherit;}
+.search-box button{border:0;background:var(--brand);color:#fff;border-radius:18px;padding:4px 12px;font-size:13px;}
+.search-box button:hover{background:var(--brand-deep);}
+.icon-btn{border:1px solid var(--line);background:#fff;border-radius:20px;padding:5px 12px;font-size:13px;color:var(--ink-soft);}
+.icon-btn:hover{border-color:var(--brand);color:var(--brand);}
+.menu-toggle{display:none;}
+
+/* 首屏 */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#f7efe8 0%,#f2e5dc 45%,#efe0d5 100%);
+  border-bottom:1px solid var(--line);
+}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding-top:52px;padding-bottom:52px;}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);color:var(--brand);font-size:12.5px;padding:4px 12px;border-radius:20px;margin-bottom:18px;letter-spacing:.5px;}
+.hero .eyebrow i{width:6px;height:6px;background:var(--brand);border-radius:50%;display:inline-block;}
+.hero h1{font-family:var(--serif);font-size:48px;letter-spacing:2px;color:var(--brand-deep);line-height:1.2;margin-bottom:16px;}
+.hero p.lead{font-size:16px;color:var(--ink-soft);max-width:520px;margin-bottom:26px;}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px;}
+.btn{border:0;border-radius:24px;padding:11px 24px;font-size:14.5px;font-weight:600;transition:.18s;display:inline-flex;align-items:center;gap:6px;}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 6px 16px rgba(140,74,63,.28);}
+.btn-primary:hover{background:var(--brand-deep);transform:translateY(-1px);}
+.btn-ghost{background:#fff;color:var(--brand-deep);border:1px solid var(--line);}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand);}
+.hero-stats{display:flex;gap:30px;flex-wrap:wrap;}
+.hero-stats div{display:flex;flex-direction:column;}
+.hero-stats b{font-family:var(--serif);font-size:26px;color:var(--brand-deep);line-height:1.1;}
+.hero-stats span{font-size:12.5px;color:var(--ink-mute);}
+.hero-art{position:relative;display:flex;justify-content:center;align-items:center;}
+.hero-art .ring{position:absolute;border-radius:50%;border:1px solid rgba(140,74,63,.18);}
+.hero-art .r1{width:400px;height:400px;}
+.hero-art .r2{width:300px;height:300px;border-style:dashed;border-color:rgba(168,130,63,.28);}
+.hero-art svg{position:relative;z-index:2;width:100%;max-width:400px;}
+.hero-art .float-card{
+  position:absolute;background:#fff;border-radius:12px;padding:10px 14px;box-shadow:var(--shadow-lg);
+  font-size:12.5px;color:var(--ink-soft);z-index:3;
+}
+.hero-art .fc1{top:12%;right:2%;}
+.hero-art .fc1 b{color:var(--brand);display:block;font-size:13px;}
+.hero-art .fc2{bottom:10%;left:0;}
+.hero-art .fc2 b{color:var(--gold);display:block;font-size:13px;}
+
+/* 三栏门户 */
+.layout{display:grid;grid-template-columns:180px minmax(0,1fr) 250px;gap:28px;padding:36px 0 20px;}
+.channel-col{position:sticky;top:calc(var(--header-h) + var(--bar-h) + 20px);align-self:start;}
+.panel-title{font-size:13px;letter-spacing:1.5px;color:var(--ink-mute);font-weight:600;margin-bottom:12px;text-transform:uppercase;}
+.channel-list{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);padding:8px;box-shadow:var(--shadow);}
+.channel-list a{display:block;padding:9px 12px;border-radius:8px;font-size:14px;color:var(--ink-soft);transition:.15s;}
+.channel-list a:hover,.channel-list a.active{background:var(--brand-soft);color:var(--brand-deep);font-weight:600;}
+.channel-list a small{float:right;color:var(--ink-mute);font-weight:400;font-size:12px;}
+
+.main-col{min-width:0;}
+.side-col{position:sticky;top:calc(var(--header-h) + var(--bar-h) + 20px);align-self:start;display:flex;flex-direction:column;gap:22px;}
+
+/* 通用板块 */
+.board{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);margin-bottom:26px;}
+.board-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;margin-bottom:18px;flex-wrap:wrap;}
+.board-head h2{font-family:var(--serif);font-size:22px;color:var(--brand-deep);letter-spacing:.5px;display:flex;align-items:center;gap:10px;}
+.board-head h2::before{content:"";width:6px;height:20px;background:var(--brand);border-radius:3px;display:inline-block;}
+.board-head .sub{font-size:13px;color:var(--ink-mute);}
+.board-head .more{font-size:13px;color:var(--brand);white-space:nowrap;}
+.board-head .more:hover{text-decoration:underline;}
+
+/* 概览 */
+.overview p{font-size:15px;color:var(--ink-soft);text-align:justify;}
+.overview .keys{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;}
+.chip{background:var(--panel-warm);border:1px solid var(--line-soft);color:var(--brand-deep);font-size:12.5px;padding:4px 11px;border-radius:20px;}
+.chip:hover{background:var(--brand-soft);}
+
+/* 精选卡片 */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
+.card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;display:flex;flex-direction:column;transition:.2s;}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:#d9c9bf;}
+.card .thumb{position:relative;aspect-ratio:4/3;background:var(--panel-warm);}
+.card .thumb img{width:100%;height:100%;object-fit:cover;}
+.card .thumb .badge{position:absolute;top:10px;left:10px;background:rgba(95,47,39,.92);color:#fff;font-size:11.5px;padding:2px 9px;border-radius:20px;letter-spacing:.5px;}
+.card .body{padding:14px 14px 16px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.card h3{font-size:15.5px;color:var(--ink);line-height:1.4;}
+.card p{font-size:13px;color:var(--ink-mute);margin:0;flex:1;}
+.tags{display:flex;gap:6px;flex-wrap:wrap;}
+.tag{font-size:11.5px;color:var(--brand);background:var(--brand-soft);padding:1px 8px;border-radius:4px;}
+.card .meta{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--ink-mute);margin-top:2px;}
+.card .meta .heat{color:var(--gold);}
+
+/* 动态列表 */
+.updates li{display:flex;gap:14px;padding:12px 0;border-bottom:1px dashed var(--line-soft);align-items:flex-start;}
+.updates li:last-child{border-bottom:0;}
+.updates .time{flex:none;width:66px;font-size:12.5px;color:var(--brand);font-weight:600;padding-top:2px;}
+.updates .info b{display:block;font-size:14.5px;color:var(--ink);margin-bottom:2px;}
+.updates .info span{font-size:13px;color:var(--ink-mute);}
+
+/* 分类 */
+.cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;}
+.cat{background:var(--panel-warm);border:1px solid var(--line-soft);border-radius:10px;padding:14px;transition:.18s;display:block;}
+.cat:hover{background:var(--brand-soft);border-color:#dcc4ba;}
+.cat b{display:block;font-size:14.5px;color:var(--brand-deep);margin-bottom:3px;}
+.cat span{font-size:12px;color:var(--ink-mute);}
+
+/* 深度解析 */
+.deep h3{font-size:17px;color:var(--brand-deep);margin:22px 0 10px;padding-left:12px;border-left:3px solid var(--gold);}
+.deep h3:first-child{margin-top:0;}
+.deep p{font-size:15px;color:var(--ink-soft);text-align:justify;}
+.deep ul{margin:0 0 14px;padding-left:0;}
+.deep ul li{position:relative;padding-left:18px;font-size:14.5px;color:var(--ink-soft);margin-bottom:7px;}
+.deep ul li::before{content:"";position:absolute;left:2px;top:10px;width:6px;height:6px;border-radius:50%;background:var(--gold);}
+.deep .quote{background:var(--gold-soft);border-left:4px solid var(--gold);border-radius:0 8px 8px 0;padding:14px 18px;font-family:var(--serif);color:var(--brand-deep);font-size:15px;margin:16px 0;}
+
+/* 体验指南 步骤 */
+.steps{counter-reset:step;display:flex;flex-direction:column;gap:14px;}
+.step{display:flex;gap:16px;align-items:flex-start;background:var(--panel-warm);border-radius:12px;padding:16px 18px;}
+.step-num{flex:none;width:34px;height:34px;border-radius:50%;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:16px;font-weight:700;}
+.step h4{font-size:15px;color:var(--brand-deep);margin-bottom:4px;}
+.step p{font-size:13.5px;color:var(--ink-soft);margin:0;}
+
+/* FAQ */
+.faq details{border:1px solid var(--line);border-radius:10px;margin-bottom:10px;background:#fff;overflow:hidden;}
+.faq details[open]{border-color:#dcc4ba;box-shadow:var(--shadow);}
+.faq summary{list-style:none;cursor:pointer;padding:14px 18px;font-size:14.5px;font-weight:600;color:var(--ink);display:flex;justify-content:space-between;align-items:center;gap:10px;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::after{content:"+";font-size:20px;color:var(--brand);font-weight:400;line-height:1;transition:.2s;}
+.faq details[open] summary::after{content:"–";}
+.faq .a{padding:0 18px 16px;font-size:14px;color:var(--ink-soft);}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.comment{background:var(--panel-warm);border-radius:10px;padding:12px 14px;font-size:13.5px;color:var(--ink-soft);}
+.comment .who{display:flex;align-items:center;gap:8px;margin-bottom:6px;}
+.avatar{width:26px;height:26px;border-radius:50%;background:var(--brand-soft);color:var(--brand-deep);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex:none;}
+.comment .who b{font-size:13px;color:var(--ink);}
+.comment .who small{color:var(--ink-mute);font-size:11.5px;}
+
+/* 资讯 */
+.news li{display:flex;gap:14px;padding:14px 0;border-bottom:1px dashed var(--line-soft);}
+.news li:last-child{border-bottom:0;padding-bottom:0;}
+.news .thumb{flex:none;width:118px;height:78px;border-radius:8px;overflow:hidden;background:var(--panel-warm);}
+.news .thumb img{width:100%;height:100%;object-fit:cover;}
+.news .txt b{display:block;font-size:14.5px;color:var(--ink);margin-bottom:4px;}
+.news .txt b:hover{color:var(--brand);}
+.news .txt span{font-size:13px;color:var(--ink-mute);display:block;}
+.news .txt time{font-size:12px;color:var(--brand);display:inline-block;margin-bottom:4px;}
+
+/* 相关推荐 */
+.rel-list{display:flex;flex-wrap:wrap;gap:9px;}
+.rel-list a{font-size:13px;border:1px solid var(--line);background:#fff;border-radius:20px;padding:6px 14px;color:var(--ink-soft);transition:.15s;}
+.rel-list a:hover{border-color:var(--brand);color:var(--brand);background:var(--brand-soft);}
+
+/* 榜单 */
+.rank li{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px dashed var(--line-soft);font-size:14px;}
+.rank li:last-child{border-bottom:0;}
+.rank .no{flex:none;width:22px;height:22px;border-radius:6px;background:var(--panel-warm);color:var(--ink-mute);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;}
+.rank li:nth-child(1) .no{background:var(--brand);color:#fff;}
+.rank li:nth-child(2) .no{background:var(--gold);color:#fff;}
+.rank li:nth-child(3) .no{background:#c9a98a;color:#fff;}
+.rank .name{flex:1;color:var(--ink);}
+.rank .val{font-size:12px;color:var(--ink-mute);}
+
+/* 侧栏组件 */
+.side-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);}
+.side-card h3{font-size:15px;color:var(--brand-deep);margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+.side-card h3::before{content:"";width:4px;height:15px;background:var(--gold);border-radius:2px;}
+.hot-list li{display:flex;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line-soft);font-size:13.5px;align-items:flex-start;}
+.hot-list li:last-child{border-bottom:0;}
+.hot-list .no{flex:none;width:18px;color:var(--brand);font-weight:700;font-family:var(--serif);}
+.hot-list a:hover{color:var(--brand);}
+.side-tags{display:flex;flex-wrap:wrap;gap:7px;}
+.side-tags a{font-size:12px;background:var(--panel-warm);color:var(--ink-soft);border-radius:6px;padding:3px 9px;}
+.side-tags a:hover{background:var(--brand-soft);color:var(--brand-deep);}
+.timeline li{position:relative;padding:0 0 14px 16px;border-left:1px solid var(--line);font-size:13px;color:var(--ink-soft);}
+.timeline li:last-child{border-left-color:transparent;padding-bottom:0;}
+.timeline li::before{content:"";position:absolute;left:-4px;top:6px;width:7px;height:7px;border-radius:50%;background:var(--gold);}
+.timeline b{display:block;color:var(--ink);font-size:13.5px;}
+.side-note{font-size:12px;color:var(--ink-mute);margin-top:10px;line-height:1.6;}
+
+/* 搜索无结果 */
+.no-result{display:none;padding:26px;text-align:center;color:var(--ink-mute);font-size:14px;border:1px dashed var(--line);border-radius:10px;}
+
+/* 页尾 */
+.site-footer{background:#2b2320;color:#c9bdb4;margin-top:20px;padding:44px 0 26px;font-size:13.5px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:30px;}
+.footer-brand .brand-text{color:#f2e6de;font-size:18px;margin-bottom:10px;display:block;}
+.footer-brand p{color:#9c8e84;font-size:13px;line-height:1.7;max-width:280px;}
+.footer-col h4{font-size:14px;color:#f2e6de;margin-bottom:12px;}
+.footer-col a{display:block;padding:4px 0;color:#a89a90;font-size:13px;}
+.footer-col a:hover{color:#e8cbb6;}
+.footer-bottom{border-top:1px solid #3d332e;padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#8c7e75;font-size:12.5px;}
+
+/* 响应式 */
+@media(max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr) 250px;gap:24px;}
+  .channel-col{position:static;grid-column:1 / -1;}
+  .channel-list{display:flex;flex-wrap:wrap;gap:6px;padding:8px;}
+  .channel-list a{flex:1 1 auto;text-align:center;padding:7px 12px;font-size:13px;}
+  .channel-list a small{display:none;}
+  .hero .wrap{grid-template-columns:1fr;gap:30px;}
+  .hero-art{order:-1;}
+  .hero h1{font-size:38px;}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .cats{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:740px){
+  .wrap{padding:0 16px;}
+  .main-nav{display:none;}
+  .menu-toggle{display:inline-flex;}
+  .search-box input{width:96px;}
+  .layout{grid-template-columns:1fr;gap:20px;}
+  .side-col{position:static;grid-column:1;}
+  .hero h1{font-size:32px;letter-spacing:1px;}
+  .hero-stats{gap:20px;}
+  .cards{grid-template-columns:1fr;}
+  .comments{grid-template-columns:1fr;}
+  .board{padding:18px;}
+  .news .thumb{width:96px;height:66px;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:22px;}
+  .footer-brand{grid-column:1 / -1;}
+  .hero-art .float-card{display:none;}
+  .mobile-menu{display:none;position:fixed;top:calc(var(--header-h) + var(--bar-h));left:0;right:0;background:#fff;border-bottom:1px solid var(--line);padding:14px 20px;z-index:54;box-shadow:var(--shadow-lg);}
+  .mobile-menu.open{display:block;}
+  .mobile-menu a{display:block;padding:10px 0;border-bottom:1px dashed var(--line-soft);color:var(--ink-soft);font-size:14.5px;}
+  .mobile-menu a:last-child{border-bottom:0;}
+}
+@media(max-width:360px){
+  .hero h1{font-size:28px;}
+  .cats{grid-template-columns:1fr;}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce">
+  <div class="wrap">
+    <span class="tag">本周更新</span>
+    <span class="txt">新增 <b>12 条</b> 成熟女性生活档案 · 秋冬通勤穿搭专题上新 · 职场转型访谈第 6 期已上线</span>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/#top" aria-label="中年女人的成熟 首页">
+      <svg viewBox="0 0 48 48" role="img" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="#8c4a3f"/>
+        <path d="M24 12c5 0 9 4 9 9 0 6-9 15-9 15s-9-9-9-15c0-5 4-9 9-9z" fill="#f4ecd9"/>
+        <circle cx="24" cy="21" r="4" fill="#8c4a3f"/>
+      </svg>
+      <span class="brand-text">中年女人的成熟</span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="/#overview">领域概览</a>
+      <a href="/#featured">精选内容</a>
+      <a href="/#updates">最新更新</a>
+      <a href="/#categories">分类入口</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#faq">常见问答</a>
+    </nav>
+    <div class="header-tools">
+      <div class="search-box">
+        <input id="searchInput" type="search" placeholder="搜索条目/话题" aria-label="搜索页内条目">
+        <button id="searchBtn" type="button">搜索</button>
+      </div>
+      <a class="icon-btn" href="/#updates">更新</a>
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mobileMenu" type="button">菜单</button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/#overview">领域概览</a>
+  <a href="/#featured">精选内容</a>
+  <a href="/#updates">最新更新</a>
+  <a href="/#categories">分类入口</a>
+  <a href="/#deep">深度解析</a>
+  <a href="/#guide">体验指南</a>
+  <a href="/#faq">常见问答</a>
+  <a href="/#news">相关资讯</a>
+</div>
+
+<main id="top">
+
+<!-- 首屏 -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow"><i></i>35—55 岁女性的生活参照系</span>
+      <h1>中年女人的成熟</h1>
+      <p class="lead">不是变得无欲无求，而是知道什么值得在意。这里收录穿搭、护肤、情绪、婚姻与职场转型的具体经验，帮你在日常里把分寸感拿稳。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#featured">看本期精选 →</a>
+        <a class="btn btn-ghost" href="/#guide">从哪开始读</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>386</b><span>生活档案条目</span></div>
+        <div><b>12</b><span>本周新增内容</span></div>
+        <div><b>9</b><span>个垂类频道</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <span class="ring r1"></span>
+      <span class="ring r2"></span>
+      <svg viewBox="0 0 360 360" role="img">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f6e6dc"/>
+            <stop offset="1" stop-color="#e7c9b8"/>
+          </linearGradient>
+        </defs>
+        <circle cx="180" cy="180" r="150" fill="url(#g1)"/>
+        <path d="M180 70c30 0 54 24 54 54 0 36-54 96-54 96s-54-60-54-96c0-30 24-54 54-54z" fill="#8c4a3f" opacity="0.9"/>
+        <circle cx="180" cy="124" r="22" fill="#f4ecd9"/>
+        <path d="M96 268c14-34 46-54 84-54s70 20 84 54" stroke="#5f2f27" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.55"/>
+        <circle cx="118" cy="96" r="5" fill="#a8823f"/>
+        <circle cx="252" cy="112" r="4" fill="#a8823f"/>
+        <circle cx="264" cy="252" r="5" fill="#a8823f"/>
+      </svg>
+      <div class="float-card fc1"><b>本周主推</b>秋冬通勤穿搭 · 大衣与针织的层次</div>
+      <div class="float-card fc2"><b>情绪管理</b>把“不解释”练成一种能力</div>
+    </div>
+  </div>
+</section>
+
+<!-- 三栏门户 -->
+<div class="wrap layout">
+
+  <!-- 左频道栏 -->
+  <aside class="channel-col">
+    <div class="panel-title">频道索引</div>
+    <nav class="channel-list" aria-label="频道索引">
+      <a href="/#overview" class="active">领域概览</a>
+      <a href="/#featured">精选内容 <small>12</small></a>
+      <a href="/#updates">最新更新 <small>10</small></a>
+      <a href="/#categories">分类入口 <small>8</small></a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#comments">用户评论</a>
+      <a href="/#news">相关资讯</a>
+      <a href="/#related">相关推荐</a>
+      <a href="/#rank">热门榜单</a>
+    </nav>
+  </aside>
+
+  <!-- 中主内容 -->
+  <div class="main-col">
+
+    <!-- 1 领域概览 -->
+    <section class="board overview" id="overview">
+      <div class="board-head">
+        <h2>领域概览</h2>
+        <span class="sub">中年女人的成熟 包含哪些方向</span>
+      </div>
+      <p>中年女人的成熟，通常落在几个具体方向上：一是外形管理，包括秋冬通勤穿搭、大衣版型选择、基础护肤与底妆减法；二是情绪与关系，包括不内耗的沟通方式、婚姻里的边界感、与父母和孩子的相处节奏；三是职业与财务，包括 40 岁后的转型路径、副业试水、家庭账本的分账方法；四是身体管理，包括围绝经期的睡眠、力量训练和体检项目选择。</p>
+      <p>这些方向并不孤立。一个 42 岁重新回到职场的女性，往往同时要处理衣橱重建、精力分配和家庭分工谈判。所以这里的内容按“可执行的条目”组织，而不是按年龄贴标签：一条穿搭档案会写清适用身材与场合，一条情绪档案会给出具体话术，一条转型档案会列出时间成本和收入区间。</p>
+      <p>当前值得关注的具体内容有三类：秋冬通勤穿搭中的“三件外套走一周”方案、围绝经期力量训练的入门顺序、以及 40+ 女性重返职场时的简历重写方法。它们共同的特点是门槛低、可当天开始、有明确的判断标准，而不是停留在“要自信”“要爱自己”的口号层面。</p>
+      <div class="keys">
+        <a class="chip" href="/#deep">秋冬通勤穿搭</a>
+        <a class="chip" href="/#deep">围绝经期力量训练</a>
+        <a class="chip" href="/#featured">40+ 重返职场</a>
+        <a class="chip" href="/#featured">婚姻边界感</a>
+        <a class="chip" href="/#guide">基础护肤减法</a>
+        <a class="chip" href="/#rank">家庭账本分账</a>
+      </div>
+    </section>
+
+    <!-- 2 精选内容推荐 -->
+    <section class="board" id="featured">
+      <div class="board-head">
+        <h2>精选内容推荐</h2>
+        <a class="more" href="/#rank">查看热度榜 →</a>
+      </div>
+      <div class="cards" id="featuredCards">
+
+        <article class="card" data-key="三件外套走一周 秋冬通勤穿搭">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/tongqin-dayi08/400/300" width="400" height="300" loading="lazy" alt="秋冬通勤大衣与针织层次搭配">
+            <span class="badge">穿搭档案</span>
+          </div>
+          <div class="body">
+            <h3>三件外套走一周：秋冬通勤穿搭方案</h3>
+            <p>用一件驼色大衣、一件短款羽绒、一件西装外套覆盖周一到周五，给出内搭与鞋包的组合表，并说明梨形与苹果形身材各自怎么调。</p>
+            <div class="tags"><span class="tag">秋冬通勤</span><span class="tag">大衣版型</span><span class="tag">梨形身材</span></div>
+            <div class="meta"><span>更新 11-24</span><span class="heat">热度 9.6</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="40岁重返职场 简历重写">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/zhongchang-zhuanxing12/400/300" width="400" height="300" loading="lazy" alt="40岁女性重返职场简历重写手稿">
+            <span class="badge">职场转型</span>
+          </div>
+          <div class="body">
+            <h3>40 岁重返职场：简历重写的三个动作</h3>
+            <p>把十年经验压缩成一页，用“结果+数字”替代职责罗列，并处理空窗期表述。附一份 42 岁行政转项目协调的真实改写对照。</p>
+            <div class="tags"><span class="tag">重返职场</span><span class="tag">简历重写</span><span class="tag">空窗期</span></div>
+            <div class="meta"><span>更新 11-22</span><span class="heat">热度 9.3</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="围绝经期 力量训练 入门">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/weijuejing-liliang21/400/300" width="400" height="300" loading="lazy" alt="围绝经期女性力量训练入门动作示意">
+            <span class="badge">身体管理</span>
+          </div>
+          <div class="body">
+            <h3>围绝经期力量训练：从每周两次开始</h3>
+            <p>先练深蹲、硬拉、推举三个动作，重量以能做完 10 次为准。说明为什么这个阶段要优先保住肌肉量，以及膝盖不适时的替代动作。</p>
+            <div class="tags"><span class="tag">围绝经期</span><span class="tag">力量训练</span><span class="tag">肌肉量</span></div>
+            <div class="meta"><span>更新 11-20</span><span class="heat">热度 9.1</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="婚姻边界感 沟通话术">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/hunyin-bianjie33/400/300" width="400" height="300" loading="lazy" alt="婚姻沟通场景中的边界感对话">
+            <span class="badge">关系沟通</span>
+          </div>
+          <div class="body">
+            <h3>婚姻里的边界感：四句不吵架的话术</h3>
+            <p>针对“被安排周末”“被评价身材”“被要求让步”三类场景，给出可以直接照念的短句，并解释为什么先讲事实再讲感受更有效。</p>
+            <div class="tags"><span class="tag">婚姻沟通</span><span class="tag">边界感</span><span class="tag">话术</span></div>
+            <div class="meta"><span>更新 11-19</span><span class="heat">热度 8.8</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="基础护肤减法 底妆">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/hufu-jianfa45/400/300" width="400" height="300" loading="lazy" alt="成熟肌肤基础护肤与底妆产品排列">
+            <span class="badge">护肤档案</span>
+          </div>
+          <div class="body">
+            <h3>基础护肤减法：把步骤砍到四步</h3>
+            <p>清洁、保湿、防晒、一支润色隔离，足够应付多数通勤场合。讲清 45 岁后皮肤变薄时，为什么叠加精华反而容易泛红。</p>
+            <div class="tags"><span class="tag">基础护肤</span><span class="tag">底妆减法</span><span class="tag">敏感肌</span></div>
+            <div class="meta"><span>更新 11-18</span><span class="heat">热度 8.7</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="家庭账本 分账方法">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/zhangben-fenzhang57/400/300" width="400" height="300" loading="lazy" alt="家庭账本分账方法的记录本与计算">
+            <span class="badge">财务规划</span>
+          </div>
+          <div class="body">
+            <h3>家庭账本怎么分：三账户法实操</h3>
+            <p>把收入拆成共同开支、个人自由、长期储备三个账户，给出比例建议和每月对账的十分钟流程，减少因钱产生的反复争执。</p>
+            <div class="tags"><span class="tag">家庭账本</span><span class="tag">分账</span><span class="tag">共同开支</span></div>
+            <div class="meta"><span>更新 11-16</span><span class="heat">热度 8.5</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="不内耗 情绪管理 练习">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/qingxu-neihao63/400/300" width="400" height="300" loading="lazy" alt="情绪管理记录与呼吸练习场景">
+            <span class="badge">情绪管理</span>
+          </div>
+          <div class="body">
+            <h3>不内耗的七分钟：情绪落地练习</h3>
+            <p>从写下触发事件、标注身体反应、给情绪命名到做一次呼气延长，四步走完约七分钟，适合在会议前或睡前单独完成。</p>
+            <div class="tags"><span class="tag">情绪管理</span><span class="tag">不内耗</span><span class="tag">呼吸练习</span></div>
+            <div class="meta"><span>更新 11-15</span><span class="heat">热度 8.9</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="母女相处 成年子女">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/munv-xiangchu71/400/300" width="400" height="300" loading="lazy" alt="中年女性与成年子女的相处场景">
+            <span class="badge">家庭关系</span>
+          </div>
+          <div class="body">
+            <h3>孩子成年后：把“管”换成“问”</h3>
+            <p>列出五个容易越界的高频问题，给出替代问法，并说明为什么减少建议次数反而能提高孩子主动联系的频率。</p>
+            <div class="tags"><span class="tag">母女相处</span><span class="tag">成年子女</span><span class="tag">越界</span></div>
+            <div class="meta"><span>更新 11-13</span><span class="heat">热度 8.2</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="体检项目 40岁后">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/tijian-xiangmu84/400/300" width="400" height="300" loading="lazy" alt="40岁后女性体检项目清单与报告">
+            <span class="badge">健康管理</span>
+          </div>
+          <div class="body">
+            <h3>40 岁后的体检清单：必做与可选</h3>
+            <p>乳腺超声、宫颈筛查、甲状腺功能、骨密度四项列为必做，肿瘤标志物与基因检测列为可选，并说明各自的复查间隔。</p>
+            <div class="tags"><span class="tag">体检项目</span><span class="tag">骨密度</span><span class="tag">复查间隔</span></div>
+            <div class="meta"><span>更新 11-11</span><span class="heat">热度 8.4</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="副业试水 时间成本">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/fuye-shishui92/400/300" width="400" height="300" loading="lazy" alt="中年女性副业试水的时间规划笔记">
+            <span class="badge">职业规划</span>
+          </div>
+          <div class="body">
+            <h3>副业试水：先用三个月算清时间成本</h3>
+            <p>把每周可支配小时数、启动投入和回本周期列成表，再决定做不做。以社区团购和写作接单两个方向做对照示例。</p>
+            <div class="tags"><span class="tag">副业</span><span class="tag">时间成本</span><span class="tag">回本周期</span></div>
+            <div class="meta"><span>更新 11-09</span><span class="heat">热度 8.0</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="白发 染发 过渡">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/baifa-ranfa15/400/300" width="400" height="300" loading="lazy" alt="中年女性白发过渡期的发色处理">
+            <span class="badge">形象管理</span>
+          </div>
+          <div class="body">
+            <h3>白发过渡期：从全染到挑染的中间方案</h3>
+            <p>讲清灰白发根长出来时的三种处理路径，以及为什么挑染比整头深色更容易过渡，附发廊沟通时该说的具体话术。</p>
+            <div class="tags"><span class="tag">白发</span><span class="tag">染发</span><span class="tag">挑染</span></div>
+            <div class="meta"><span>更新 11-07</span><span class="heat">热度 7.9</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-key="独处 一个人 周末">
+          <div class="thumb">
+            <img src="https://picsum.photos/seed/duchu-zhoumo26/400/300" width="400" height="300" loading="lazy" alt="一个人度过的安静周末场景">
+            <span class="badge">生活方式</span>
+          </div>
+          <div class="body">
+            <h3>一个人过周末：不靠消费填满的两天</h3>
+            <p>给出一个不花钱的周末流程模板：一次长距离散步、一顿认真做的饭、两小时不碰手机的阅读，并说明为什么固定节奏比新鲜感更解压。</p>
+            <div class="tags"><span class="tag">独处</span><span class="tag">周末安排</span><span class="tag">解压</span></div>
+            <div class="meta"><span>更新 11-05</span><span class="heat">热度 7.8</span></div>
+          </div>
+        </article>
+
+      </div>
+      <div class="no-result" id="noResult">没有找到匹配的条目，试试“穿搭”“护肤”“情绪”“职场”等更短的关键词。</div>
+    </section>
+
+    <!-- 3 最新更新 -->
+    <section class="board" id="updates">
+      <div class="board-head">
+        <h2>最新更新</h2>
+        <span class="sub">11 月 25 日前后条目动态</span>
+      </div>
+      <ul class="updates">
+        <li><span class="time">今天 09:30</span><div class="info"><b>秋冬通勤穿搭专题</b><span>新增“短款羽绒的三套内搭”，含苹果形身材的腰线处理。</span></div></li>
+        <li><span class="time">今天 08:10</span><div class="info"><b>围绝经期力量训练</b><span>补充膝盖不适时的替代动作清单，共 5 个。</span></div></li>
+        <li><span class="time">昨天 21:40</span><div class="info"><b>40 岁重返职场访谈</b><span>第 6 期上线：从行政主管到项目协调，谈薪资谈判过程。</span></div></li>
+        <li><span class="time">昨天 17:20</span><div class="info"><b>情绪落地练习</b><span>新增打印版记录卡，四步流程压缩到一页。</span></div></li>
+        <li><span class="time">11 月 23 日</span><div class="info"><b>家庭账本三账户法</b><span>更新对账模板，加入季度复盘页。</span></div></li>
+        <li><span class="time">11 月 22 日</span><div class="info"><b>婚姻边界感话术</b><span>新增“被评价身材”场景的两句回应。</span></div></li>
+        <li><span class="time">11 月 20 日</span><div class="info"><b>基础护肤减法</b><span>补充 45 岁后皮肤变薄的成分避让表。</span></div></li>
+        <li><span class="time">11 月 18 日</span><div class="info"><b>白发过渡期方案</b><span>新增挑染与半永久染的对照说明。</span></div></li>
+        <li><span class="time">11 月 16 日</span><div class="info"><b>孩子成年后的相处</b><span>更新五个高频越界问题及替代问法。</span></div></li>
+        <li><span class="time">11 月 14 日</span><div class="info"><b>体检清单</b><span>骨密度复查间隔按最新共识调整表述。</span></div></li>
+      </ul>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="board" id="categories">
+      <div class="board-head">
+        <h2>分类入口</h2>
+        <span class="sub">按垂类定位内容</span>
+      </div>
+      <div class="cats">
+        <a class="cat" href="/#featured"><b>秋冬通勤穿搭</b><span>外套、针织、鞋包组合</span></a>
+        <a class="cat" href="/#featured"><b>基础护肤</b><span>减法步骤与成分避让</span></a>
+        <a class="cat" href="/#featured"><b>情绪管理</b><span>不内耗、呼吸与记录</span></a>
+        <a class="cat" href="/#featured"><b>婚姻沟通</b><span>边界感与具体话术</span></a>
+        <a class="cat" href="/#featured"><b>职场转型</b><span>简历重写、副业试水</span></a>
+        <a class="cat" href="/#featured"><b>身体管理</b><span>力量训练、体检清单</span></a>
+        <a class="cat" href="/#featured"><b>家庭关系</b><span>成年子女、父母相处</span></a>
+        <a class="cat" href="/#featured"><b>形象管理</b><span>白发过渡、发色选择</span></a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析 -->
+    <section class="board deep" id="deep">
+      <div class="board-head">
+        <h2>深度解析</h2>
+        <span class="sub">成熟不是一种状态，是一套判断方法</span>
+      </div>
+      <p>讨论中年女人的成熟，最容易滑向两个极端：一边是“什么都要看开”的劝慰，一边是“必须保持年轻”的焦虑。真正可用的版本介于两者之间——它表现为一系列具体判断：什么场合穿什么、什么话不必接、什么钱该花、什么关系需要留出距离。下面按四个维度拆开说。</p>
+
+      <h3>外形：先定场合，再定单品</h3>
+      <p>成熟女性的穿搭难点不在“显年轻”，而在“不出错且省时间”。一个可操作的顺序是：先确定这一周要出现的场合类型，再反推需要的单品数量。多数人的通勤场合只有三类——正式会议、日常办公、下班后的社交。三类场合共享一件外套、两条下装、三件内搭，就足以覆盖。</p>
+      <ul>
+        <li>正式会议：驼色或深灰长大衣 + 针织连衣裙 + 低跟短靴，重点是肩线合体。</li>
+        <li>日常办公：短款羽绒或西装外套 + 直筒裤 + 平底乐福鞋，重点是裤长不堆脚踝。</li>
+        <li>下班社交：把内搭换成有光泽感的衬衫，加一条丝巾即可，不必另备一套。</li>
+      </ul>
+      <p>身材差异主要影响版型而非颜色。梨形身材把视觉重心放在上半身，选有结构的肩部设计；苹果形身材避免过于宽松的直筒大衣，改用系带或收腰款；身高不足 158 厘米的，大衣长度控制在小腿中段以上。这些规则比“今年流行什么”更值得记住。</p>
+
+      <h3>护肤：减法的边界在哪里</h3>
+      <p>45 岁之后皮肤变薄、屏障恢复变慢，堆叠产品的边际收益迅速下降。四步方案——温和清洁、保湿、防晒、润色隔离——能覆盖大部分日常需求。所谓“减法”，不是什么都不用，而是把预算集中在三件事上：防晒的稳定性、保湿的封闭性、以及一支颜色合适的润色产品。</p>
+      <p>需要警惕的是高浓度酸类和频繁去角质。这个阶段角质层更新本就偏慢，过度处理容易造成持续泛红。如果一定要用功效型成分，建议单支引入、观察两周，而不是同时更换整套产品。</p>
+      <div class="quote">“成熟的一个标志是：不再用新产品解决旧问题，而是先判断问题是不是真的需要解决。”</div>
+
+      <h3>情绪：把反应延迟十秒</h3>
+      <p>情绪管理的核心不是压住情绪，而是拉长从触发到反应之间的间隔。一个可执行的做法是四步记录：写下触发事件、标注身体最先有反应的位置、给情绪一个准确的名字、做一次呼气长于吸气的呼吸。整套流程七分钟左右，可以在会议前、通勤车上或睡前完成。</p>
+      <p>坚持两周后，多数人会发现自己能更早识别“这件事让我不舒服”，而不是等到爆发才知道。这个能力在家庭沟通中尤其有用——它让你有机会选择不接那句话，而不是事后后悔。</p>
+
+      <h3>关系与职业：边界和筹码</h3>
+      <p>婚姻里的边界感，本质是把自己的需求说清楚而不指责对方。有效的表达通常是“事实 + 我的感受 + 具体请求”三段式，长度控制在三句话内。比如“这周末你安排了两次聚会，我没有自己的时间，我希望周六下午留给我”。这比“你从来不考虑我”更容易被接住。</p>
+      <p>职业上，40 岁后的转型要算清三样东西：可迁移的能力、能承受的空窗期长度、以及家庭分工是否支持。简历重写的关键是把职责改写成结果，用数字替代形容词。副业试水则建议先设三个月的观察期，用每周可支配小时数倒推可行性，而不是先投入再想办法。</p>
+      <p>这四件事的共同点在于：它们都要求你先判断，再行动。中年女人的成熟，落到日常就是这种判断力的稳定输出——不急着证明，也不轻易让步。</p>
+    </section>
+
+    <!-- 6 体验指南 -->
+    <section class="board" id="guide">
+      <div class="board-head">
+        <h2>体验指南</h2>
+        <span class="sub">内容消费的顺序与判断依据</span>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <div><h4>先看与当下场景直接相关的条目</h4><p>如果这周有重要会议，先读秋冬通勤穿搭里的正式场合方案；如果最近睡不好，先看围绝经期的睡眠与训练条目。按场景进入，比按分类逐个浏览更省时间。</p></div>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <div><h4>判断一条内容值不值得投入时间</h4><p>看它是否给出具体条件：适用身材、适用年龄、时间成本、预算区间。只讲态度不讲条件的条目，读完往往无法落地，可以跳过。</p></div>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <div><h4>同类条目横向比较</h4><p>比如两份护肤方案，比较它们的步骤数量、成分重叠度和适用肤质。步骤更少、成分更集中的那份，通常更适合屏障偏弱的成熟肌肤。</p></div>
+        </div>
+        <div class="step">
+          <span class="step-num">4</span>
+          <div><h4>先做一条，观察两周</h4><p>穿搭方案先试一周，护肤方案先试两周，情绪练习先做七天。用身体和生活的实际反馈决定是否保留，而不是一次换掉全部习惯。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="board faq" id="faq">
+      <div class="board-head">
+        <h2>常见问答</h2>
+      </div>
+      <details>
+        <summary>第一次接触这类内容，从哪个条目开始看比较好？</summary>
+        <div class="a">建议从“三件外套走一周”或“情绪落地练习”开始。前者能在一周内看到衣橱的变化，后者七天就能感受到情绪识别的提升，两个都属于门槛低、反馈快的条目。</div>
+      </details>
+      <details>
+        <summary>40 岁以后还需要每天用精华吗？</summary>
+        <div class="a">不一定。皮肤变薄后，屏障恢复速度下降，叠加多种精华反而容易泛红。更稳妥的做法是保留一支保湿精华或一支功效精华，单支引入并观察两周，其余步骤用清洁、保湿、防晒覆盖。</div>
+      </details>
+      <details>
+        <summary>围绝经期的力量训练一周几次合适？</summary>
+        <div class="a">从每周两次开始，每次三到四个动作，重量以能标准完成十次为准。坚持四周后再考虑增加到三次。优先练下肢和背部的大肌群，比只练手臂更有效。</div>
+      </details>
+      <details>
+        <summary>婚姻沟通里的“边界感”和“冷战”有什么区别？</summary>
+        <div class="a">边界感是把自己的需求和不可接受的部分说清楚，仍然保持沟通；冷战是切断沟通、用沉默施压。前者通常用三句话完成表达并给出具体请求，后者往往持续数天且不解决任何问题。</div>
+      </details>
+      <details>
+        <summary>40 岁重返职场，简历上的空窗期怎么写？</summary>
+        <div class="a">如实写时间段，同时在旁边标注这段时间的具体产出，比如照顾家人期间完成的课程、志愿项目或接过的短期工作。关键是把空窗期写成有内容的时间段，而不是留白让面试官自行想象。</div>
+      </details>
+      <details>
+        <summary>白发过渡期，挑染和整头染哪个更省事？</summary>
+        <div class="a">如果发根白发生长速度快，挑染更容易过渡，因为新生发根与挑染色差更自然，补染周期可以拉长到三个月左右。整头深色染虽然当下统一，但发根一旦长出就需要频繁补染。</div>
+      </details>
+    </section>
+
+    <!-- 8 用户评论 -->
+    <section class="board" id="comments">
+      <div class="board-head">
+        <h2>用户评论</h2>
+        <span class="sub">近 30 天内 16 条</span>
+      </div>
+      <div class="comments">
+        <div class="comment"><div class="who"><span class="avatar">林</span><b>林间小满</b><small>11-25</small></div>三件外套那个方案我照着穿了一周，确实不用每天早上纠结了，就是短款羽绒配直筒裤对我这种腿短的人还是有点压身高。</div></div>
+        <div class="comment"><div class="who"><span class="avatar">陈</span><b>陈默的秋天</b><small>11-25</small></div>情绪落地练习做了五天，最有用的是给情绪命名那一步，以前只知道烦，现在能说清是委屈还是着急。</div></div>
+        <div class="comment"><div class="who"><span class="avatar">周</span><b>周末不加班</b><small>11-24</small></div>护肤减法我持保留意见，我 46 岁，只用四步之后冬天还是干，后来自己加了一层面霜才稳住。</div></div>
+        <div class="comment"><div class="who"><span class="avatar">吴</span><b>吴阿姨的厨房</b><small>11-24</small></div>家庭账本三账户法用了两个月，最大的变化是吵架少了，各自的自由账户互不过问，这点很关键。</div></div>
+        <div class="comment"><div class="who"><span class="avatar">赵</span><b>赵小满</b><small>11-23</small></div>重返职场那篇里的简历对照很有用，我把“负责行政事务”改成“统筹 3 个部门 40 人物资”，面试时被追问了两次。</div></div>
+        <div class="comment"><div class="who"><span class="avatar">孙</span><b>孙老师教语文</b><small>11-23</small></div>边界感话术里“事实+感受+请求”这个结构，我用在跟婆婆沟通上，第一次没有吵起来，虽然也没完全同意。</div></div>
+        <div class="comment"><div class="who"><span class="avatar">郑</span><b>郑家二姐</b><small>11-22</small></div>围绝经期力量训练从每周两次开始，第三周膝盖有点不舒服，按替代动作换成箱式深蹲之后好多了。</div></div>
+        <div class="comment"><div class="who"><span class="avatar">何</span><b>何处的风</b><small>11-21</small></div>孩子成年后把“管”换成“问”这条我实践了一个月，主动联系确实变多了，但有时候还是会忍不住给建议。</div></div>
+        <div class="comment"><div class="who"><span class="avatar">冯</span><b>冯小满</b><small>11-21</small></div>白发过渡那篇讲得实在，我挑了三年整头染，现在发根两周长出来就得补，确实累，准备试试挑染。</div></div>
+        <div class="comment"><div class="who"><span class="avatar">韩</span><b>韩梅梅的下午</b><small>11-20</small></div>一个人过周末的模板我照做了，最长的一次散步走了八公里，回来做饭的时候脑子是空的，很舒服。</div></div>
+        <div class="comment"><div class="who"><span class="avatar">许</span><b>许愿不加班</b><small>11-19</small></div>副业试水那篇的时间成本表挺清醒，我算完之后发现每周只有四小时，果断先不做了，省了一笔启动费。</div></div>
+        <div class="comment"><div class="who"><span class="avatar">曹</span><b>曹小满</b><small>11-19</small></div>体检清单里骨密度那项提醒了我，去年没查，今年补上了，结果偏低，开始补钙和负重训练。</div></div>
+        <div class="comment"><div class="who"><span class="avatar">邓</span><b>邓女士的阳台</b><small>11-18</small></div>整体内容偏实用，但也有几篇还是有点鸡汤味，比如独处那篇，我觉得可以再多给点具体的时间安排。</div></div>
+        <div class="comment"><div class="who"><span class="avatar">彭</span><b>彭家老三</b><small>11-17</small></div>护肤减法里说的“单支引入观察两周”很中肯，我之前同时换三样，脸红了半个月都不知道是谁的问题。</div></div>
+        <div class="comment"><div class="who"><span class="avatar">萧</span><b>萧萧的衣橱</b><small>11-16</small></div>梨形身材那段说到点上了，肩部有结构的大衣确实比收腰款更适合我，之前一直买错方向。</div></div>
+        <div class="comment"><div class="who"><span class="avatar">袁</span><b>袁来是你</b><small>11-15</small></div>希望多写点 50 岁以上适用的内容，现在很多条目还是默认 40 岁上下，体型和精力差别挺大的。</div></div>
+      </div>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="board" id="news">
+      <div class="board-head">
+        <h2>相关资讯</h2>
+      </div>
+      <ul class="news">
+        <li>
+          <div class="thumb"><img src="https://picsum.photos/seed/zixun-tongqin01/600/400" width="600" height="400" loading="lazy" alt="秋冬通勤穿搭专题新增内搭方案"></div>
+          <div class="txt"><time>2026-11-25</time><b>秋冬通勤穿搭专题新增三套内搭方案</b><span>针对苹果形身材的腰线处理与短款羽绒搭配，本周陆续上线。</span></div>
+        </li>
+        <li>
+          <div class="thumb"><img src="https://picsum.photos/seed/zixun-zhuanxing02/600/400" width="600" height="400" loading="lazy" alt="40岁重返职场访谈第六期现场"></div>
+          <div class="txt"><time>2026-11-24</time><b>40 岁重返职场访谈第 6 期：从行政到项目协调</b><span>受访者详述简历重写过程与薪资谈判中的让步底线。</span></div>
+        </li>
+        <li>
+          <div class="thumb"><img src="https://picsum.photos/seed/zixun-liliang03/600/400" width="600" height="400" loading="lazy" alt="围绝经期力量训练替代动作清单"></div>
+          <div class="txt"><time>2026-11-22</time><b>力量训练条目补充膝盖不适替代动作</b><span>新增箱式深蹲、臀桥与坐姿推举三项，适合关节敏感人群。</span></div>
+        </li>
+        <li>
+          <div class="thumb"><img src="https://picsum.photos/seed/zixun-zhangben04/600/400" width="600" height="400" loading="lazy" alt="家庭账本三账户法对账模板更新"></div>
+          <div class="txt"><time>2026-11-20</time><b>三账户法对账模板加入季度复盘页</b><span>新增长期储备账户的年度目标拆解，方便按季度调整比例。</span></div>
+        </li>
+        <li>
+          <div class="thumb"><img src="https://picsum.photos/seed/zixun-hufu05/600/400" width="600" height="400" loading="lazy" alt="成熟肌肤成分避让对照表"></div>
+          <div class="txt"><time>2026-11-18</time><b>基础护肤减法补充成分避让表</b><span>整理高浓度酸类与去角质产品的使用间隔，附泛红期处理建议。</span></div>
+        </li>
+        <li>
+          <div class="thumb"><img src="https://picsum.photos/seed/zixun-baifa06/600/400" width="600" height="400" loading="lazy" alt="白发过渡期挑染与整头染对照"></div>
+          <div class="txt"><time>2026-11-16</time><b>白发过渡期方案更新挑染与整头染对照</b><span>从补染周期、发质损伤和预算三个维度做横向比较。</span></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="board" id="related">
+      <div class="board-head">
+        <h2>相关推荐</h2>
+        <span class="sub">延伸方向，不是当下热门</span>
+      </div>
+      <div class="rel-list">
+        <a href="/#featured">驼色大衣的三种内搭</a>
+        <a href="/#featured">直筒裤长度怎么定</a>
+        <a href="/#featured">低跟短靴选购要点</a>
+        <a href="/#featured">45 岁后的保湿成分</a>
+        <a href="/#featured">围绝经期的睡眠安排</a>
+        <a href="/#featured">空窗期简历写法</a>
+        <a href="/#featured">成年子女沟通问法</a>
+        <a href="/#featured">家庭储备金比例</a>
+      </div>
+    </section>
+
+    <!-- 11 热门榜单 -->
+    <section class="board" id="rank">
+      <div class="board-head">
+        <h2>热门榜单</h2>
+        <span class="sub">近 7 天阅读排行</span>
+      </div>
+      <ol class="rank">
+        <li><span class="no">1</span><span class="name">三件外套走一周：秋冬通勤穿搭方案</span><span class="val">阅读 2.4 万</span></li>
+        <li><span class="no">2</span><span class="name">40 岁重返职场：简历重写的三个动作</span><span class="val">阅读 2.1 万</span></li>
+        <li><span class="no">3</span><span class="name">不内耗的七分钟：情绪落地练习</span><span class="val">阅读 1.9 万</span></li>
+        <li><span class="no">4</span><span class="name">围绝经期力量训练：从每周两次开始</span><span class="val">阅读 1.6 万</span></li>
+        <li><span class="no">5</span><span class="name">婚姻里的边界感：四句不吵架的话术</span><span class="val">阅读 1.4 万</span></li>
+        <li><span class="no">6</span><span class="name">基础护肤减法：把步骤砍到四步</span><span class="val">阅读 1.2 万</span></li>
+        <li><span class="no">7</span><span class="name">家庭账本怎么分：三账户法实操</span><span class="val">阅读 9800</span></li>
+        <li><span class="no">8</span><span class="name">白发过渡期：从全染到挑染的中间方案</span><span class="val">阅读 8600</span></li>
+      </ol>
+    </section>
+
+  </div>
+
+  <!-- 右辅助栏 -->
+  <aside class="side-col">
+    <div class="side-card">
+      <h3>本周热读</h3>
+      <ol class="hot-list">
+        <li><span class="no">1</span><a href="/#featured">驼色大衣配直筒裤</a></li>
+        <li><span class="no">2</span><a href="/#featured">简历空窗期怎么写</a></li>
+        <li><span class="no">3</span><a href="/#featured">情绪命名练习</a></li>
+        <li><span class="no">4</span><a href="/#featured">骨密度复查间隔</a></li>
+        <li><span class="no">5</span><a href="/#featured">挑染补染周期</a></li>
+      </ol>
+    </div>
+    <div class="side-card">
+      <h3>条目时间线</h3>
+      <ul class="timeline">
+        <li><b>11-25</b>通勤穿搭新增内搭方案</li>
+        <li><b>11-24</b>转型访谈第 6 期上线</li>
+        <li><b>11-22</b>力量训练替代动作更新</li>
+        <li><b>11-20</b>账本模板加季度复盘</li>
+        <li><b>11-18</b>护肤成分避让表补齐</li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <h3>常用标签</h3>
+      <div class="side-tags">
+        <a href="/#featured">秋冬通勤</a>
+        <a href="/#featured">大衣版型</a>
+        <a href="/#featured">基础护肤</a>
+        <a href="/#featured">情绪管理</a>
+        <a href="/#featured">婚姻沟通</a>
+        <a href="/#featured">重返职场</a>
+        <a href="/#featured">围绝经期</a>
+        <a href="/#featured">家庭账本</a>
+        <a href="/#featured">白发过渡</a>
+      </div>
+      <p class="side-note">标签按内容方向归集，点击后回到精选内容区。</p>
+    </div>
+  </aside>
+
+</div>
+</main>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="brand-text">中年女人的成熟</span>
+        <p>一个面向 35—55 岁女性的生活方式内容站点，收录穿搭、护肤、情绪、关系、职业与健康的具体经验，主张先判断再行动。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容栏目</h4>
+        <a href="/#overview">领域概览</a>
+        <a href="/#featured">精选内容</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#deep">深度解析</a>
+      </div>
+      <div class="footer-col">
+        <h4>实用入口</h4>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#categories">分类入口</a>
+        <a href="/#rank">热门榜单</a>
+      </div>
+      <div class="footer-col">
+        <h4>社区与资讯</h4>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#related">相关推荐</a>
+        <a href="/#top">回到顶部</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 中年女人的成熟 · 内容为经验整理与示例条目，具体方案请结合个人情况判断</span>
+      <span>数据说明：榜单与热度为站内示例统计，更新时间为 2026-11-25</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle = document.getElementById('menuToggle');
+  var menu = document.getElementById('mobileMenu');
+  if(toggle && menu){
+    toggle.addEventListener('click', function(){
+      var open = menu.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.textContent = open ? '收起' : '菜单';
+    });
+    menu.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        menu.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+        toggle.textContent = '菜单';
+      }
+    });
+  }
+
+  var input = document.getElementById('searchInput');
+  var btn = document.getElementById('searchBtn');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#featuredCards .card'));
+  var noResult = document.getElementById('noResult');
+
+  function doSearch(){
+    var q = (input.value || '').trim().toLowerCase();
+    if(!q){
+      cards.forEach(function(c){ c.style.display = ''; });
+      noResult.style.display = 'none';
+      return;
+    }
+    var hit = 0;
+    cards.forEach(function(c){
+      var key = (c.getAttribute('data-key') || '') + ' ' + c.textContent;
+      if(key.toLowerCase().indexOf(q) > -1){
+        c.style.display = '';
+        hit++;
+      } else {
+        c.style.display = 'none';
+      }
+    });
+    noResult.style.display = hit === 0 ? 'block' : 'none';
+  }
+
+  if(btn){ btn.addEventListener('click', doSearch); }
+  if(input){
+    input.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+    input.addEventListener('input', function(){
+      if(!input.value.trim()){ doSearch(); }
+    });
+  }
+})();
+</script>
+</body>
+  </html>
